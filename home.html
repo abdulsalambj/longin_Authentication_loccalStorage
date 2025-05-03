@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,9 +14,66 @@
   </nav>
 
   <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
-    <!-- <h1>Welcome, <span id="userName"></span>!</h1> -->
+     <h1>Welcome, <span id="userName"></span>!</h1> 
+   </div>
+
+  <script src="homepage.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-light border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="home.html">Coinverse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-primary fw-semibold" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Settings</a>
+          </li>
+        </ul>
+
+        <span class="badge bg-primary text-white py-2 px-3" id="userName">Welcome, User</span>
+        <button class="btn btn-danger ms-3" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Home Page</h2>
+    <p>Welcome to your dashboard. Add your personal notes or data below:</p>
+
+    <!-- Input Field for Notes -->
+    <div class="mt-4">
+      <h4>Add Your Notes</h4>
+      <div class="input-group mb-3">
+        <input type="text" id="userInput" class="form-control" placeholder="Enter your note">
+        <button class="btn btn-success" id="submitBtn">Submit</button>
+      </div>
+      <ul class="list-group" id="userDataList"></ul>
+    </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="homepage.js"></script>
 </body>
 </html>
